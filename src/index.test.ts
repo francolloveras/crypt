@@ -1,5 +1,5 @@
 import { randomBytes } from "crypto";
-import crypt from "./index";
+import { crypt } from "./index";
 import { ERROR_MESSAGE } from "./const";
 
 describe("CryptHelper", () => {

@@ -13,7 +13,7 @@ npm install @classius/crypt
 ## Usage
 
 ```typescript
-import crypt from "@classius/crypt";
+import { crypt } from "@classius/crypt";
 
 const secretKey = "your-secret-key";
 const value = "your-value";

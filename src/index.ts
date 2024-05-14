@@ -75,4 +75,4 @@ const crypt = {
   },
 };
 
-export default crypt;
+export { crypt };
