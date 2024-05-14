@@ -37,29 +37,29 @@ console.log("Match:", match);
 
 Encrypts a value using a secret key.
 
-- <span style="color:#F97583;font-weight:bold;">@param</span> `value`: <span style="color:#79B8FF;">string</span> - The value to encrypt.
-- <span style="color:#F97583;font-weight:bold;">@param</span> `secretKey`: <span style="color:#79B8FF;">string</span> - The secret key used for encryption.
-- <span style="color:#F97583;font-weight:bold;">@returns</span>: <span style="color:#79B8FF;">string</span> - The encrypted value.
-- <span style="color:#F97583;font-weight:bold;">@throws</span>: <span style="color:#79B8FF;">Error</span> - Error if the value or secret key is missing.
+- `@param value`: string - The value to encrypt.
+- `@param secretKey`: string - The secret key used for encryption.
+- `@returns`: string - The encrypted value.
+- `@throws`: Error - Error if the value or secret key is missing.
 
 ### crypt.decrypt()
 
 Decrypts a value using a secret key.
 
-- <span style="color:#F97583;font-weight:bold;">@param</span> `value`: <span style="color:#79B8FF;">string</span> - The value to decrypt.
-- <span style="color:#F97583;font-weight:bold;">@param</span> `secretKey`: <span style="color:#79B8FF;">string</span> - The secret key used for decryption.
-- <span style="color:#F97583;font-weight:bold;">@returns</span>: <span style="color:#79B8FF;">string</span> - The decrypted value.
-- <span style="color:#F97583;font-weight:bold;">@throws</span>: <span style="color:#79B8FF;">Error</span> - Error if the value or secret key is missing.
+- `@param value`: string - The value to decrypt.
+- `@param secretKey`: string - The secret key used for decryption.
+- `@returns`: string - The decrypted value.
+- `@throws`: Error - Error if the value or secret key is missing.
 
 ### crypt.compare()
 
 Compares a value with its encrypted version to verify if they match after decryption.
 
-- <span style="color:#F97583;font-weight:bold;">@param</span> `value`: <span style="color:#79B8FF;">string</span> - The original value.
-- <span style="color:#F97583;font-weight:bold;">@param</span> `encrypted`: <span style="color:#79B8FF;">string</span> - The encrypted value.
-- <span style="color:#F97583;font-weight:bold;">@param</span> `secretKey`: <span style="color:#79B8FF;">string</span> - The secret key used for decryption.
-- <span style="color:#F97583;font-weight:bold;">@returns</span>: <span style="color:#79B8FF;">boolean</span> - true if the value matches its decrypted version, false otherwise.
-- <span style="color:#F97583;font-weight:bold;">@throws</span>: <span style="color:#79B8FF;">Error</span> - Error if the value, encrypted or secret key is missing.
+- `@param value`: string - The original value.
+- `@param encrypted`: string - The encrypted value.
+- `@param secretKey`: string - The secret key used for decryption.
+- `@returns`: boolean - true if the value matches its decrypted version, false otherwise.
+- `@throws`: Error - Error if the value, encrypted or secret key is missing.
 
 ## Contributing
 
