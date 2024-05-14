@@ -6,9 +6,7 @@ import {
   INPUT_ENCODING,
 } from "./const";
 
-class CryptHelper {
-  constructor() {}
-
+const crypt = {
   /**
    * Encrypts a value using a secret key.
    * @param value The value to encrypt.
@@ -29,7 +27,7 @@ class CryptHelper {
 
     const tag = cipher.getAuthTag().toString(OUTPUT_ENCODING);
     return `${iv.toString(OUTPUT_ENCODING)}:${encryptedValue}:${tag}`;
-  }
+  },
 
   /**
    * Decrypts  a value using a secret key.
@@ -57,7 +55,7 @@ class CryptHelper {
     );
     decryptedValue += decipher.final(INPUT_ENCODING);
     return decryptedValue;
-  }
+  },
 
   /**
    * Compares a value with its encrypted version to verify if they match after decryption.
@@ -74,9 +72,7 @@ class CryptHelper {
 
     const decrypted = this.decrypt(encrypted, secretKey);
     return value === decrypted;
-  }
-}
-
-const crypt = new CryptHelper();
+  },
+};
 
 export default crypt;
