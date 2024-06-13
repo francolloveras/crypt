@@ -7,13 +7,13 @@ Crypt is a simple utility class for encrypting and decrypting values using Node.
 To install Crypt, you can use npm:
 
 ```bash
-npm install @classius/crypt
+npm install @francolloveras/crypt
 ```
 
 ## Usage
 
 ```typescript
-import { crypt } from "@classius/crypt";
+import { crypt } from "@francolloveras/crypt";
 
 const secretKey = "your-secret-key";
 const value = "your-value";
