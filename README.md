@@ -15,8 +15,9 @@ npm install @francolloveras/crypt
 ```typescript
 import { crypt } from "@francolloveras/crypt";
 
-const secretKey = "your-secret-key";
-const value = "your-value";
+// The secret key must have a 32-byte hexadecimal value; You can use the generate() method to create a secret key.
+const secretKey = crypt.generate();
+const value = "value-to-encrypt";
 
 // Encrypt a value
 const encrypted = crypt.encrypt(value, secretKey);
@@ -32,6 +33,12 @@ console.log("Match:", match);
 ```
 
 ## API
+
+### crypt.generate()
+
+Generate a 32-byte hexadecimal value that can be used as a secret key.
+
+- `@returns`: string - Random bytes value.
 
 ### crypt.encrypt()
 

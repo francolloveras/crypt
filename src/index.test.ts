@@ -1,9 +1,16 @@
-import { randomBytes } from "crypto";
 import { crypt } from "./index";
 import { ERROR_MESSAGE } from "./const";
 
 describe("CryptHelper", () => {
-  const secretKey = randomBytes(32).toString("hex");
+  it("should generate a 32-byte hexadecimal value correctly", () => {
+    const value = crypt.generate();
+
+    expect(typeof value).toBe("string");
+    expect(value.length).toBe(64);
+    expect(value).toMatch(/^[0-9a-fA-F]+$/);
+  });
+
+  const secretKey = crypt.generate();
   const originalValue = "hello world";
 
   it("should encrypt and decrypt a value correctly", () => {

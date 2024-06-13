@@ -8,6 +8,13 @@ import {
 
 const crypt = {
   /**
+   * Generate a 32-byte hexadecimal value that can be used as a secret key.
+   * @returns 32-byte hexadecimal value.
+   */
+  generate() {
+    return randomBytes(32).toString("hex");
+  },
+  /**
    * Encrypts a value using a secret key.
    * @param value The value to encrypt.
    * @param secretKey The secretKey to encrypt.
