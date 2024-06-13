@@ -68,6 +68,16 @@ Compares a value with its encrypted version to verify if they match after decryp
 - `@returns`: boolean - true if the value matches its decrypted version, false otherwise.
 - `@throws`: Error - Error if the value, encrypted or secret key is missing.
 
+## Test
+
+To perform tests it is necessary to install the `jest` and `ts-jest` dependencies. Then run the test command.
+
+```bash
+npm run test
+```
+
+This will test all available methods and return the test result if successful or if a problem occurred.
+
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a pull request if you find any issues or have suggestions for improvements.
